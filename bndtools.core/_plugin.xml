@@ -339,7 +339,19 @@
             </objectState>
          </visibility>
       </objectContribution>
-      
+      <objectContribution
+      		id="bndtools.bndPackageContribution"
+      		objectClass="org.eclipse.jdt.core.IPackageFragment">
+      	 <action
+      		   class="bndtools.internal.ui.ToggleExportPackageAction"
+      		   enablesFor="1"
+      		   icon="icons/plus.png"
+      		   id="bndtools.toggleExportedPackageAction"
+      		   label="Toggle package export"
+      		   menubarPath="additions"
+      		   style="push">
+      	 </action>
+      </objectContribution>
    </extension>
    <extension
          point="org.eclipse.core.resources.markers"
